@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OSU Dining Archive</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2em;
+      max-width: 900px;
+    }
+
+    input {
+      padding: 0.5em;
+      width: 300px;
+      margin-bottom: 1em;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5em;
+      text-align: left;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    #menu {
+      margin-top: 1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>OSU Dining Archive</h1>
+  <p>Welcome to the OSU Nutrition Database! This site provides information about dining options on campus and helps you find foods that match your preferences.</p>
+
+  <form onsubmit="return false;">
+    <label for="search">Search:</label>
+    <input type="text" id="search" name="food" placeholder="Try 'high protein' or 'low calorie'">
+  </form>
+
+  <div id="menu"></div>
+
+  <!-- Link to your optimized front-end logic -->
+  <script src="menu.js"></script>
+</body>
+</html>

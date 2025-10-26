@@ -1,0 +1,35 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 2rem;
+  background: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+}
+
+#search {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  width: 300px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: white;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #efefef;
+}
