@@ -73,7 +73,7 @@ with sync_playwright() as p:
         location_button.click()
 
         # Wait for menu sections
-        if not wait_for_selector_errorless(page, "li.menu-station"):
+        if not wait_for_selector_errorless(page, "li.menu-station", 15000):
             print("No menu found for {0}; continuing...".format(location_name))
             continue
         sections = page.query_selector_all("li.menu-station")
